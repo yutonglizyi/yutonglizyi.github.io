@@ -754,65 +754,122 @@ a:hover {
 }
 
 @media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero-inner {
+    width: 100%;
+  }
+
   .hero-copy {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
     display: block;
-    padding-top: 0.8rem;
+    height: 100%;
+    padding: clamp(2.05rem, 5.4svh, 2.8rem) 1rem 1.45rem;
   }
 
   .kicker {
-    max-width: 20rem;
+    position: absolute;
+    top: clamp(2.05rem, 5.4svh, 2.8rem);
+    left: 1rem;
+    max-width: 15rem;
+    padding-top: 0.56rem;
+    padding-right: 0.22rem;
+    border-top: 0;
+    font-size: 0.74rem;
+    line-height: 1.24;
+    white-space: normal;
+  }
+
+  .kicker::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 0.34rem);
+    border-top: 1px solid var(--line);
   }
 
   .hero h1 {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    row-gap: 0.44rem;
-    font-size: clamp(3.5rem, 17.1vw, 5.5rem);
-    transform: none;
+    position: absolute;
+    top: 42.5%;
+    left: 0;
+    width: 100vw;
+    height: clamp(10.25rem, 23svh, 12rem);
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: clamp(5.15rem, 26.5vw, 7.05rem);
+    line-height: 0.68;
+    letter-spacing: 0;
+    transform: translateY(-50%);
+  }
+
+  .hero h1 span {
+    position: absolute;
   }
 
   .name-given {
-    grid-column: 1 / span 5;
-    grid-row: 1;
+    top: 0;
+    left: 0.08em;
+    width: calc(100vw - 0.08em);
+    font-size: 1em;
+    text-align: left;
+    transform: scaleX(1.08);
+    transform-origin: left center;
   }
 
   .name-role {
-    grid-column: 1 / span 3;
-    grid-row: 3;
-    align-self: start;
-    justify-self: end;
-    font-size: 0.765rem;
+    top: clamp(8.95rem, 16.5svh, 9.75rem);
+    left: 5vw;
+    width: 40vw;
+    font-size: clamp(0.68rem, 2.58vw, 0.82rem);
     line-height: 1.08;
     text-align: right;
-    transform: translate(0.15em, 0.44em);
-  }
-
-  .name-school {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-    justify-self: end;
-    font-size: 0.93rem;
-    line-height: 1.12;
-    max-width: 12rem;
-    text-align: right;
-    transform: translateX(0.15em);
-  }
-
-  .name-family {
-    grid-column: 3 / span 2;
-    grid-row: 2;
     transform: none;
   }
 
+  .name-school {
+    top: clamp(5.85rem, 12.4svh, 6.65rem);
+    left: 5vw;
+    width: 40vw;
+    font-size: clamp(0.82rem, 3vw, 0.98rem);
+    line-height: 1.12;
+    max-width: none;
+    text-align: right;
+    transform: none;
+  }
+
+  .name-family {
+    top: clamp(5.85rem, 12.4svh, 6.65rem);
+    left: 52vw;
+    right: auto;
+    width: 1.5em;
+    font-size: 1em;
+    text-align: left;
+    transform: none;
+    z-index: 2;
+  }
+
   .hero-line {
+    position: absolute;
+    top: calc(50% + clamp(5.4rem, 13.2svh, 7rem));
+    left: 1rem;
+    right: 1rem;
     max-width: 21rem;
-    margin-top: 1rem;
+    margin-top: 0;
     font-size: 0.95rem;
   }
 
   .profile-jump {
+    position: absolute;
+    top: calc(50% + clamp(13.4rem, 26svh, 15.6rem));
+    left: 1rem;
+    right: 1rem;
     max-width: 19rem;
-    margin-top: 0.95rem;
+    margin-top: 0;
   }
 
   .profile-jump em {
