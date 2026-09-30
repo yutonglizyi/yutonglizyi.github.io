@@ -1,0 +1,7 @@
+.DS_Store
+_local_archive/
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out

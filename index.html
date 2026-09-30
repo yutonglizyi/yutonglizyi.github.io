@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yutong YI's academic homepage">
+  <title>Yutong YI</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="hero" id="profile">
+    <div class="poster-grid" aria-hidden="true"></div>
+    <div class="block block-green" aria-hidden="true"></div>
+    <div class="block block-ochre" aria-hidden="true"></div>
+    <div class="block block-coral" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <section class="hero-copy" aria-labelledby="hero-name">
+        <p class="kicker" data-field="kicker">Academic Profile</p>
+        <h1 id="hero-name" class="name-lockup">
+          <span class="name-given">Yutong</span>
+          <span class="name-role">Master Student</span>
+          <span class="name-school">Sun Yat-sen University</span>
+          <span class="name-family">YI</span>
+        </h1>
+        <p class="hero-line" data-field="oneLine">A concise one-sentence introduction will go here.</p>
+
+        <nav class="profile-jump" aria-label="Profile links">
+          <a href="#publications"><span>01</span><strong>Publications</strong><em>View section</em></a>
+          <a href="#talks"><span>02</span><strong>Talks</strong><em>View section</em></a>
+          <a href="#awards"><span>03</span><strong>Awards</strong><em>View section</em></a>
+        </nav>
+      </section>
+
+      <figure class="network-art">
+        <img src="assets/hero-network-graffiti-art.png" alt="Abstract figures connected by thin expressive lines">
+      </figure>
+    </div>
+  </header>
+
+  <main class="page-shell" id="main">
+    <aside class="sidebar" aria-labelledby="connect-heading">
+      <section class="about-panel">
+        <div class="sidebar-profile">
+          <figure class="sidebar-photo">
+            <img id="profile-photo" src="assets/profile-placeholder.svg" alt="Profile photo placeholder">
+          </figure>
+          <h2 data-field="name">Your Name</h2>
+          <p>Master Student</p>
+        </div>
+
+        <h2 id="connect-heading">Connect Me</h2>
+        <ul class="connect-list" id="connect-list"></ul>
+      </section>
+    </aside>
+
+    <div class="content-column">
+      <section class="content-section about-me-section" id="about-me" aria-labelledby="about-me-heading">
+        <div class="section-heading">
+          <p class="section-number">Profile</p>
+          <h2 id="about-me-heading">About Me</h2>
+        </div>
+        <div class="main-about-copy" id="about-me-copy">
+          <p>Content pending.</p>
+        </div>
+        <ul class="keyword-list main-keyword-list" id="keywords" aria-label="Research keywords"></ul>
+      </section>
+
+      <section class="content-section" id="publications" aria-labelledby="publications-heading">
+        <div class="section-heading">
+          <p class="section-number">01</p>
+          <h2 id="publications-heading">Publications</h2>
+        </div>
+        <ol class="item-list publication-list" id="publication-list"></ol>
+      </section>
+
+      <section class="content-section" id="talks" aria-labelledby="talks-heading">
+        <div class="section-heading">
+          <p class="section-number">02</p>
+          <h2 id="talks-heading">Talks</h2>
+        </div>
+        <ol class="item-list talk-list" id="talk-list"></ol>
+      </section>
+
+      <section class="content-section" id="awards" aria-labelledby="awards-heading">
+        <div class="section-heading">
+          <p class="section-number">03</p>
+          <h2 id="awards-heading">Awards</h2>
+        </div>
+        <ol class="item-list award-list" id="award-list"></ol>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p><span data-field="name">Your Name</span></p>
+  </footer>
+</body>
+</html>
