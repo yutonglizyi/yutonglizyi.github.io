@@ -89,6 +89,16 @@ window.siteContent = {
       link: "COMMA2026_slides.pdf"
     },
     {
+      title: "Towards an Abstract Argumentation Approach to Bipolar Social Networks",
+      event: "Doctoral Consortium / OHAAI Session, Summer School on Argumentation (SSA)",
+      place: "",
+      date: "2026",
+      links: [
+        { label: "Page", href: "https://comma2026.vercel.app/ssa/dc/" },
+        { label: "Poster", href: "Bipolar_Social_Networks_poster.pdf" }
+      ]
+    },
+    {
       title: "Social Network Aggregation Beyond Preservation",
       event: "The 10th Women in Logic Workshop (WIL)",
       place: "",

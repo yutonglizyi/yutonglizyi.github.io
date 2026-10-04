@@ -238,11 +238,16 @@
       const metaParts = [item.event, item.place, item.date].filter(hasText);
       if (metaParts.length) body.appendChild(makeElement("p", "item-meta", metaParts.join(" · ")));
 
-      const link = makeLink("Slides", item.link);
-      if (link) {
-        const group = makeElement("div", "item-links");
-        group.appendChild(link);
-        body.appendChild(group);
+      const links = itemLinks(item.links);
+      if (links) {
+        body.appendChild(links);
+      } else {
+        const link = makeLink(item.linkLabel || "Slides", item.link);
+        if (link) {
+          const group = makeElement("div", "item-links");
+          group.appendChild(link);
+          body.appendChild(group);
+        }
       }
 
       li.appendChild(body);
