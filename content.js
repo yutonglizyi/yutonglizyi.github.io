@@ -82,6 +82,16 @@ window.siteContent = {
 
   talks: [
     {
+      title: "Who Defends Whom? — From Argument Acceptability to Social Conflict",
+      event: "Yat-sen Student Forum",
+      place: "",
+      date: "2026",
+      links: [
+        { label: "Slides", href: "Who Defends Whom.pdf" },
+        { label: "Slides (中文)", href: "逸仙学生论坛中文.pdf" }
+      ]
+    },
+    {
       title: "External Semantics for Argumentation Frameworks",
       event: "The 11th International Conference on Computational Models of Argument (COMMA)",
       place: "",
