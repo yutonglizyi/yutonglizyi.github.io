@@ -87,8 +87,8 @@ window.siteContent = {
       place: "",
       date: "2026",
       links: [
-        { label: "Slides", href: "Who Defends Whom.pdf" },
-        { label: "Slides (中文)", href: "逸仙学生论坛中文.pdf" }
+        { label: "Slides", href: "Who Defends Whom.pdf?v=6b03da8f0307" },
+        { label: "Slides (中文)", href: "逸仙学生论坛中文.pdf?v=c10f4d73ebec" }
       ]
     },
     {
