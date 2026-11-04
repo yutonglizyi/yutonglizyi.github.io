@@ -43,7 +43,7 @@ window.siteContent = {
   },
 
   links: [
-    { label: "CV", href: "Yutong_YI_CV.pdf" },
+    { label: "CV", href: "Yutong_YI_CV.pdf?v=8dbe27e4b1a9" },
     // { label: "Google Scholar", href: "https://scholar.google.com/" },
     // { label: "ORCID", href: "https://orcid.org/" }
   ],
