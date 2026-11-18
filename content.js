@@ -153,6 +153,20 @@ window.siteContent = {
       note: "",
       links: []
     },
+    {
+      title: "10th Women in Logic Workshop Student Grant",
+      organization: "Topos Institute",
+      year: "May 2026",
+      note: "",
+      links: []
+    },
+    {
+      title: "7th Summer School on Argumentation: Connecting Argumentation Student Grant",
+      organization: "the SSA 2026 Organizing Committee",
+      year: "July 2026",
+      note: "",
+      links: []
+    },
     // {
     //   title: "",
     //   organization: "",
